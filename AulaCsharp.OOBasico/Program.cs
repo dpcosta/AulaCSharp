@@ -138,6 +138,8 @@ namespace AulaCsharp.OOBasico
             
             string matricula = mat;
 
+            int idade = 14;
+
 
 
 
