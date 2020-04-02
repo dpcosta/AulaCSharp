@@ -13,11 +13,19 @@ namespace Exercicios.OO
 
             var t1 = new Celsius(12.10);
 
-            Farenheit farenheit = new Farenheit(48); // 8.88
+            try
+            {
+                Farenheit farenheit = new Farenheit(-48); // 8.88
+                Celsius convertido = ConversaoDeTemperatura.ConverteDe(farenheit);
+                Console.WriteLine(convertido.Valor);
+            }
+            catch (FarenheitException e)
+            {
+                Console.WriteLine($"Você tentou criar uma temperatura em Farenheit com valor inválido. Valor informado: {e.ValorInformado}");
+            }
+            
 
-            Celsius convertido = ConversaoDeTemperatura.ConverteDe(farenheit);
-
-            Console.WriteLine(convertido.Valor);
+            
         }
     }
 }

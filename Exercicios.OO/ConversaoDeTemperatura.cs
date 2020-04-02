@@ -7,7 +7,7 @@ namespace Exercicios.OO
     static class ConversaoDeTemperatura // 
     {
         // propriedades, métodos, etc.
-        public int Qualquer { get; set; } // membro de instância (new)
+        //public int Qualquer { get; set; } // membro de instância (new)
 
         public static Celsius ConverteDe(Farenheit temperatura)
         {
